@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Arty - Arty as a Service</title>
+  <meta name="description" content="Meet Arty, your AI desk assistant that watches, learns, and automates IT and helpdesk tasks.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    @media (min-width: 768px) {
+      .single-line-header h1 {
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <nav class="bg-white shadow-md p-4 fixed top-0 left-0 w-full z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-blue-600">Arty</a>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="text-blue-500 font-semibold">Home</a></li>
+        <li><a href="features.html" class="hover:text-blue-500">Features</a></li>
+        <li><a href="industries.html" class="hover:text-blue-500">Industries</a></li>
+        <li><a href="pricing.html" class="hover:text-blue-500">Pricing</a></li>
+        <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+        <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="single-line-header bg-gradient-to-r from-blue-700 to-purple-700 text-white text-center py-28 px-4 mt-16" data-aos="zoom-in">
+    <h1 class="text-5xl font-extrabold mb-4">Arty as a Service</h1>
+    <p class="text-xl max-w-6xl mx-auto">Meet Arty, your AI desk assistant that watches, learns, and automates IT and helpdesk tasks.</p>
+  </header>
+
+  <main class="py-20 px-6 max-w-5xl mx-auto space-y-12">
+    <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
+      <h2 class="text-xl font-semibold mb-2">🎯 What is Arty?</h2>
+      <p>Arty is an AI-powered desk assistant that watches your workflow and learns how to automate it — from password resets to full ticket resolution.</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
+      <h2 class="text-xl font-semibold mb-2">🕒 Learns Over Time</h2>
+      <p>Arty may take several sessions to fully understand a task. As you repeat it, he watches and builds a clear automation path.</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
+      <h2 class="text-xl font-semibold mb-2">🧠 Always Learning</h2>
+      <p>Arty keeps getting smarter with every task he observes. No need to re-code.</p>
+    </div>
+
+    <!-- Real-world examples section -->
+    <section class="pt-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 text-center">🔍 What Arty Has Learned</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg border hover:shadow-md transition">
+          <h3 class="font-semibold text-lg mb-1">⏱ Microsoft 365 Password Resets</h3>
+          <p class="text-sm mb-2">After watching 3 tickets, Arty now performs user resets automatically.</p>
+          <a href="features.html" class="text-blue-500 text-sm">Learn more →</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg border hover:shadow-md transition">
+          <h3 class="font-semibold text-lg mb-1">📨 Lodging tickets in vendor portals</h3>
+          <p class="text-sm mb-2">Arty watched you fill out forms and now mimics the entire process.</p>
+          <a href="features.html" class="text-blue-500 text-sm">Learn more →</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg border hover:shadow-md transition">
+          <h3 class="font-semibold text-lg mb-1">📅 Closing SSL expiry notices</h3>
+          <p class="text-sm mb-2">Arty learned that tickets with 90-day SSL alerts should be closed.</p>
+          <a href="features.html" class="text-blue-500 text-sm">Learn more →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-6 bg-gray-800 text-center text-gray-400 text-sm">
+    © 2025 Arty AI Assistant. Automate your day — serve more clients with less effort.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true });</script>
+</body>
+</html>
