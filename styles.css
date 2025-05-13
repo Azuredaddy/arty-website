@@ -53,6 +53,7 @@ ul li {
   color: #7cc9ff;
 }
 
+/* Contact Form Styling */
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -90,3 +91,4 @@ button {
   font-size: 1rem;
   cursor: pointer;
 }
+
