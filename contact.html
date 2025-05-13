@@ -1,1 +1,79 @@
-<h1>Contact</h1><p>Email us to bring Arty to your business.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Arty</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #ccc;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #000;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #218dff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="logo.png" alt="Arty Logo" height="40" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Get in Touch</h1>
+    <p>Want to bring Arty into your team? Reach out below and let’s chat.</p>
+
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
