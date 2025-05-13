@@ -6,22 +6,133 @@
   <title>Arty – Your Favorite Coworker is AI</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #0b0f1f 0%, #111735 100%);
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: #0d1128;
+    }
+    header img {
+      height: 40px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .video-card {
+      margin-top: 2rem;
+    }
+    .video-card video {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .feature-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      text-align: left;
+    }
+    .feature-box h3 {
+      color: #6cc2ff;
+    }
+    .feature-box p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #1b213a;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cta p {
+      color: #ccc;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #218dff;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+      background: #0d1128;
+    }
+  </style>
 </head>
 <body>
-  <header class="navbar">
-    <img src="logo.png" alt="Arty Logo" height="40" />
+
+  <header>
+    <img src="logo.png" alt="Arty Logo" />
     <nav>
       <ul>
         <li><a href="features.html">Features</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero" data-aos="fade-up">
     <h1>Your Favorite Coworker is AI</h1>
-    <p class="tagline">No Coffee. No Complaints. Just Results.</p>
+    <p>No coffee. No complaints. Just results — 24/7.</p>
 
     <div class="video-card" data-aos="zoom-in">
       <video autoplay muted loop playsinline>
@@ -31,22 +142,40 @@
     </div>
   </section>
 
-  <section class="features">
-    <div class="feature-box" data-aos="fade-right">
-      <h3>🤖 1 AI Employee</h3>
-      <p>Ready to work any role — from helpdesk to admin and customer service.</p>
-    </div>
-    <div class="feature-box" data-aos="fade-up">
-      <h3>🧠 ALWAYS LEARNING</h3>
-      <p>Observes every task. No coding required.</p>
-    </div>
-    <div class="feature-box" data-aos="fade-left">
-      <h3>🕒 WORKS 24/7</h3>
-      <p>Trains once. Masters endless jobs.</p>
+  <section class="section" data-aos="fade-up">
+    <h2 style="text-align: center;">Why Teams Choose Arty</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <h3>🕒 Works 24/7</h3>
+        <p>No breaks. No burnout. Arty gets the job done day and night.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🎓 Learns by Watching</h3>
+        <p>Just show Arty what to do — and he’ll remember it forever.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📉 Cuts Costs, Not Corners</h3>
+        <p>One-time cost, no ongoing salaries, no sick leave, no HR issues.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🔐 Secure & Reliable</h3>
+        <p>Built by a Microsoft Certified Expert with enterprise-grade security in mind.</p>
+      </div>
     </div>
   </section>
+
+  <section class="cta" data-aos="fade-up">
+    <h2>Ready to Meet Arty?</h2>
+    <p>Let us show you how Arty can transform your business today.</p>
+    <a href="contact.html">Contact Us</a>
+  </section>
+
+  <footer>
+    © 2025 Arty – Your AI-Powered Coworker
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>AOS.init();</script>
 </body>
 </html>
+
