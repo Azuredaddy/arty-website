@@ -3,50 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arty – Your Favorite AI Coworker</title>
+  <title>Arty – Your New Favorite Coworker is AI</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #0a0f2c 0%, #1a1f4a 100%);
+      color: #fff;
+      text-align: center;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: transparent;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-top: 60px;
+    }
+    .tagline {
+      font-size: 1.25rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+    .video-card {
+      background: #111c3d;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 40px 60px;
+      margin: 20px auto;
+    }
+    .video-card img {
+      width: 100px;
+    }
+    .meet-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #218dff;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 60px auto;
+      flex-wrap: wrap;
+      max-width: 1000px;
+    }
+    .feature-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: left;
+      backdrop-filter: blur(8px);
+    }
+    .feature-box h3 {
+      color: #7cc9ff;
+    }
+    .feature-box p {
+      color: #ddd;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
+
   <header class="navbar">
-    <img src="logo.png" alt="Arty Logo" class="logo" />
+    <img src="logo.png" alt="Arty Logo" height="40" />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="features.html">Features</a></li>
-        <li><a href="industries.html">Industries</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero-video">
-    <video autoplay loop muted playsinline>
-      <source src="arty_promo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
+  <section class="hero">
+    <h1>Your New Favorite Coworker is AI</h1>
+    <p class="tagline">No Coffee. No Complaints. Just Results.</p>
 
-  <section class="headline">
-    <h1>Your Favorite Coworker is AI</h1>
-    <p>No coffee. No complaints. Just results.</p>
-  </section>
-
-  <section class="features">
-    <h2>AI-Powered Employee</h2>
-    <div class="feature-grid">
-      <div class="feature-card">🕒 Works 24/7 — no breaks, no burnout</div>
-      <div class="feature-card">🎓 Train Once, Masters Forever</div>
-      <div class="feature-card">🔁 Continuously Learning, Always Improving</div>
-      <div class="feature-card">🧠 Self-Learning — improves by watching like a real employee</div>
+    <div class="video-card">
+      <img src="arty_homepage_video_placeholder.png" alt="Meet Arty" />
+      <br />
+      <a class="meet-btn" href="#">MEET ARTY</a>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Arty – The AI Coworker Company</p>
-  </footer>
+  <section class="features">
+    <div class="feature-box">
+      <h3>🤖 1 AI Employee</h3>
+      <p>Ready to work any role — from helpdesk to admin and customer service.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🧠 ALWAYS LEARNING</h3>
+      <p>Observes every task. No coding required.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🕒 WORKS 24/7</h3>
+      <p>Trains once. Masters endless jobs.</p>
+    </div>
+  </section>
+
 </body>
 </html>
+
 
