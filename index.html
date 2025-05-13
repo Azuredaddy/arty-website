@@ -3,63 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arty – Your New Favorite Coworker is AI</title>
+  <title>Arty – Your Favorite Coworker is AI</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(180deg, #0a0f2c 0%, #1a1f4a 100%);
-      color: #fff;
-      text-align: center;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: transparent;
-    }
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      margin: 0;
-    }
-    .navbar a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-top: 60px;
-    }
-    .tagline {
-      font-size: 1.25rem;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-    .video-card {
+    .hero .video-card {
       background: #111c3d;
       border-radius: 20px;
-      display: inline-block;
       padding: 40px 60px;
-      margin: 20px auto;
-    }
-    .video-card img {
-      width: 100px;
-    }
-    .meet-btn {
+      margin: 30px auto;
       display: inline-block;
-      margin-top: 20px;
-      background: #218dff;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
+    }
+    .hero video {
+      width: 320px;
+      border-radius: 10px;
+      margin-top: 10px;
     }
     .features {
       display: flex;
@@ -73,8 +30,8 @@
       background: rgba(255, 255, 255, 0.05);
       padding: 20px;
       border-radius: 12px;
-      width: 280px;
-      text-align: left;
+      width: 300px;
+      text-align: center;
       backdrop-filter: blur(8px);
     }
     .feature-box h3 {
@@ -100,13 +57,14 @@
   </header>
 
   <section class="hero">
-    <h1>Your New Favorite Coworker is AI</h1>
+    <h1>Your Favorite Coworker is AI</h1>
     <p class="tagline">No Coffee. No Complaints. Just Results.</p>
 
     <div class="video-card">
-      <img src="arty_homepage_video_placeholder.png" alt="Meet Arty" />
-      <br />
-      <a class="meet-btn" href="#">MEET ARTY</a>
+      <video autoplay muted loop playsinline>
+        <source src="assets/arty_promo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   </section>
 
@@ -126,6 +84,8 @@
   </section>
 
 </body>
+</html>
+
 </html>
 
 
