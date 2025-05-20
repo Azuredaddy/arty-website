@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arty – AI Employee</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+<nav class="w-full p-4 border-b flex justify-center bg-white sticky top-0 z-50 shadow-sm space-x-6 text-lg font-medium">
+<a href="index.html">Home</a>
+<a href="features.html">Features</a>
+<a href="industries.html">Industries</a>
+<a href="pricing.html">Pricing</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="login.html" class="ml-auto text-blue-600 font-semibold hover:underline">Login</a>
+</nav>
+<header class="text-center py-20 px-6 bg-gradient-to-r from-white via-blue-50 to-white" data-aos="fade-down">
+<h1 class="text-5xl font-extrabold mb-4">Your Favorite Coworker is AI</h1>
+
+<p class="text-gray-500">No Coffee. No Complaints. Just Results.</p>
+</header>
+<main class="max-w-5xl mx-auto px-6 py-12 space-y-8">
+<section>
+<h2 class="text-3xl font-bold text-center mb-6" data-aos="fade-up">Arty-as-a-Service</h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-green-50 p-6 rounded-xl shadow" data-aos="fade-up"><h3 class="text-xl font-semibold mb-2">🕒 Works 24/7</h3><p>Never takes a break. Arty is always ready to work, even while you sleep.</p></div>
+<div class="bg-purple-50 p-6 rounded-xl shadow" data-aos="fade-up"><h3 class="text-xl font-semibold mb-2">🎓 Train Once, Masters Forever</h3><p>Teach Arty a task once and he’ll repeat it with perfection every time.</p></div>
+<div class="bg-blue-50 p-6 rounded-xl shadow" data-aos="fade-up"><h3 class="text-xl font-semibold mb-2">🔁 Continuously Learning</h3><p>Adapts to changes by watching you work. No manual updates needed.</p></div>
+<div class="bg-yellow-50 p-6 rounded-xl shadow" data-aos="fade-up"><h3 class="text-xl font-semibold mb-2">🧠 Self-Learning</h3><p>Improves over time by observing — like a real employee that never forgets.</p></div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-gray-300 text-center py-6 text-sm">
+    © 2025 Arty – Built for Business. Powered by AI.
+  </footer>
+<button class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition hidden" id="backToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Back to Top">↑</button>
+<script>
+  const btn = document.getElementById('backToTopBtn');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('hidden', window.scrollY < 300);
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script>AOS.init({ once: true });</script>
+</body></html>
